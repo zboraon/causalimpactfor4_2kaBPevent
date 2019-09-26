@@ -49,7 +49,7 @@
   for (prior_sd in sdseq) { 
       
     
-    res <-loop_4_2ka_BP(data_combined=data_combined,
+    res <-loop_4_2ka_BP(data_combined=data_combined[,1],
                         prior_sd=prior_sd,
                         age=age,
                         horizon=horizon,
