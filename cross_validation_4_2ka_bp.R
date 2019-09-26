@@ -66,8 +66,8 @@
           res_df <- rbind(res_df, res_row)
           
   
-  
-      write.csv(res_df, paste0("cv_res_locallineartrend_",j-1,"_",names(data_combined)[1] ,".csv"),
+  dir.create("cv_results")
+      write.csv(res_df, paste0("cv_results/cv_res_locallineartrend_",j-1,"_",names(data_combined)[1] ,".csv"),
             row.names=FALSE) # write the results of accuracy measures
       
       minres_df=res_df[res_df$mean_mase <= min(res_df$mean_mase)*1.025 &
