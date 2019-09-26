@@ -2,7 +2,7 @@
 The functions and data used for the manuscript for the "A Bayesian test for the 4.2 ka BP abrupt climatic change event in southeast Europe and southwest Asia using structural time series analysis of paleoclimate data"
 
 
-For cross-validation please run the following command in your R console:
+For cross-validation please run the following command in your R console, but this run takes time:
 
 ```{r, eval = F}
 library(RCurl)
