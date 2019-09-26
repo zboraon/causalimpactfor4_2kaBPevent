@@ -73,7 +73,9 @@
       minres_df=res_df[res_df$mean_mase <= min(res_df$mean_mase)*1.025 &
                 +           res_df$mean_mase >= min(res_df$mean_mase)*0.975,]
       
-      write.csv(minres_df, paste0("min_cv_res_locallineartrend_",j-1,"_",names(data_combined)[1] ,".csv"),
+      dir.create("min_cv_results")
+
+      write.csv(minres_df, paste0("min_cv_results/min_cv_res_locallineartrend_",j-1,"_",names(data_combined)[1] ,".csv"),
                 row.names=FALSE) # min values of accuracy measures
                       }
                   }
