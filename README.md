@@ -1,5 +1,5 @@
 # causalimpactfor4_2kaBPevent
-The functions and data used for the manuscript for the "A Bayesian test for the 4.2 ka BP abrupt climatic change event in southeast Europe and southwest Asia using structural time series analysis of paleoclimate data"
+The functions and data used for the manuscript for the *"A Bayesian test for the 4.2 ka BP abrupt climatic change event in southeast Europe and southwest Asia using structural time series analysis of paleoclimate data"*
 
 
 For cross-validation please run the following command in your R console. At the end you will end up with two .csv files for each response variable, one is the whole cross-validation results and the other one is the minimum values of cross-validation results. However, notice that the following command runs cross_validation_4_2ka_bp which calls the loop_4_2ka_BP.R function and make 20,000 MCMC runs for 10 different values for each response variable, i.e. it takes time.
