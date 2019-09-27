@@ -1,3 +1,5 @@
+  #adapted from http://sisifospage.tech/2017-10-30-forecasting-bsts.html
+  
   library("CausalImpact")
   library("lattice")
   library("Metrics")
