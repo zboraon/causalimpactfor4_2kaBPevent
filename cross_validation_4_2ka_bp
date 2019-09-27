@@ -2,7 +2,7 @@
   library("lattice")
   library("Metrics")
   library("RCurl")
-  library(devtools)
+  library("devtools")
   source_url("https://raw.githubusercontent.com/zboraon/causalimpactfor4_2kaBPevent/master/functions/loop_4_2ka_BP.R") #add the loop_4_2ka_BP.R function to source
  
   responseseturl <- getURL("https://raw.githubusercontent.com/zboraon/causalimpactfor4_2kaBPevent/master/data/impact_set_after_cleared_27_74ka.csv")
