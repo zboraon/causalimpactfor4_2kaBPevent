@@ -6,13 +6,13 @@ For cross-validation please run the following command in your R console. At the 
 
 ```{r, eval = F}
 library(RCurl)
-script <- getURL("https://raw.githubusercontent.com/zboraon/causalimpactfor4_2kaBPevent/master/cross_validation_4_2ka_bp", ssl.verifypeer = FALSE)
+script <- getURL("https://raw.githubusercontent.com/zboraon/causalimpactfor4_2kaBPevent/master/cross_validation_4_2ka_bp.R", ssl.verifypeer = FALSE)
 eval(parse(text = script))
 ```
 After you get the cross-validation results, you can run the following command to get the impact results. While this one is faster than the previous run it takes amount in your storage. However, you can turn off the line where it saves the whole results to your disk.
 
 ```{r, eval = F}
 library(RCurl)
-script <- getURL("https://raw.githubusercontent.com/zboraon/causalimpactfor4_2kaBPevent/master/path_causalimpact_after_cv", ssl.verifypeer = FALSE)
+script <- getURL("https://raw.githubusercontent.com/zboraon/causalimpactfor4_2kaBPevent/master/path_causalimpact_after_cv.R", ssl.verifypeer = FALSE)
 eval(parse(text = script))
 ```
