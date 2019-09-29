@@ -9,10 +9,10 @@ library("devtools")
 source_url("https://raw.githubusercontent.com/zboraon/causalimpactfor4_2kaBPevent/master/functions/causal_impact_4_2ka.R") #add the causal_impact_4_2ka.R function to source
 
 
-responseseturl <- getURL("https://raw.githubusercontent.com/zboraon/causalimpactfor4_2kaBPevent/master/impact_set_after_cleared_27_74ka.csv")
+responseseturl <- getURL("https://raw.githubusercontent.com/zboraon/causalimpactfor4_2kaBPevent/master/data/impact_set_after_cleared_27_74ka.csv")
   possible <- read.csv(text = responseseturl) # response variables
   
-  controlseturl <- getURL("https://raw.githubusercontent.com/zboraon/causalimpactfor4_2kaBPevent/master/training_set_after_cleared_27_74ka.csv")
+  controlseturl <- getURL("https://raw.githubusercontent.com/zboraon/causalimpactfor4_2kaBPevent/master/data/training_set_after_cleared_27_74ka.csv")
   training <- read.csv(text = controlseturl) # control set
   
 
