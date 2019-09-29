@@ -28,7 +28,6 @@ set.seed=1234
 
 # organize data according to the cross-validation results
 mydir = "min_cv_results/"
-mixedsort(sort(myfiles))
 myfiles = list.files(path=mydir, pattern="*.csv", full.names=TRUE)
 myfiles = mixedsort(sort(myfiles))
 dat_csv = ldply(myfiles, read_csv)
