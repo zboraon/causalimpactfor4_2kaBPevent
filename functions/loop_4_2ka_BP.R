@@ -11,7 +11,7 @@ loop_4_2ka_BP <- function(data_combined,
     l <- which(age == -4400) - (fold-1)*horizon
     
     preinterval<-c(1,(l-horizon))
-	  postinterval<-c((l-horizon+1),l)
+    postinterval<-c((l-horizon+1),l)
     data_test<-data_combined[1:l, ]
     
 
